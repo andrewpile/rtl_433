@@ -117,7 +117,7 @@ static int cotech_36_7959_decode(r_device *decoder, bitbuffer_t *bitbuffer)
             "wind_dir_deg",     "Wind direction",   DATA_INT,    wind_dir,
             "wind_avg_m_s",     "Wind",             DATA_FORMAT, "%.1f m/s", DATA_DOUBLE, wind * 0.1f,
             "wind_max_m_s",     "Gust",             DATA_FORMAT, "%.1f m/s", DATA_DOUBLE, gust * 0.1f,
-            "light_lux",        "Light Intensity",  DATA_FORMAT, "%.1f lux", DATA_DOUBLE, light_lux,
+            "light_lux",        "Light Intensity",  DATA_FORMAT, "%.1f lux", DATA_DOUBLE, light_lux * 0.1f,
             "uv",               "UV Index",         DATA_FORMAT, "%.1f", DATA_DOUBLE, uv * 0.1f,
             "mic",              "Integrity",        DATA_STRING, "CRC",
             NULL);
